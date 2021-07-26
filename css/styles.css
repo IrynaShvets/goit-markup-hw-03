@@ -38,7 +38,6 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
 
 /* Навигация хедера */
@@ -46,6 +45,7 @@ body {
 .header-conteiner {
   display: flex;
   align-items: center;
+  border: 1px solid #ececec;
 }
 
 .nav-header {
@@ -140,16 +140,20 @@ body {
 }
 
 .hero {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
   background: #2f303a;
   text-align: center;
 }
 
 .hero-title {
   width: 696px;
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 219px;
-  padding-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
@@ -251,6 +255,10 @@ img {
   height: auto;
 }
 
+.works {
+  padding-top: 0;
+}
+
 .work-img {
   display: flex;
   flex-basis: calc(100% / 3 - 30px);
@@ -280,6 +288,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  border: 0 solid #eeeeee;
 }
 
 .work-title,
@@ -313,12 +322,14 @@ img {
   text-align: center;
 }
 
-/* Фильтеры */
-/*
- {
-  padding-top: 188px;
-}*/
-.filters-section {
+.filters {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 185px;
+  margin-bottom: 0;
 }
 .filter-buttons {
   display: flex;
@@ -332,28 +343,32 @@ img {
 .filter {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px -15px;
+  margin-left: -15px;
+  margin-top: 19px;
 }
 
 .filter-list {
-  margin: 15px 15px;
-}
-/*
-  justify-content: space-between;
-  padding-top: 50px;
-.filter .filter-list +  {
+  width: 370px;
+  margin-top: 30px;
   margin-left: 30px;
-}*/
+}
+
+.filter-link.image {
+  margin-top: 0;
+}
+
+.list-item {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
 
 .filter-link {
   text-decoration: none;
-  border: 1px solid #eeeeee;
 }
 
 .filter-title {
   margin-top: 0;
   margin-bottom: 0;
-  padding: 20px 24px 4px;
   color: var(--primary-text-color);
   font-weight: bold;
   font-size: 18px;
@@ -364,7 +379,6 @@ img {
 .filter-text {
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0 24px 20px;
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
