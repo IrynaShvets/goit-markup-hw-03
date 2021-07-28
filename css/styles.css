@@ -142,18 +142,19 @@ body {
 .hero {
   display: flex;
   justify-content: center;
-  height: 100%;
   flex-direction: column;
+  height: 100%;
   align-items: center;
   background: #2f303a;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 219px;
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
@@ -183,10 +184,6 @@ body {
 .button:focus {
   color: #ffffff;
   background: var(--selection-color);
-}
-
-.hero .hero-button {
-  margin-bottom: 181px;
 }
 
 .hero-button {
@@ -247,7 +244,7 @@ body {
   overflow: hidden;
 }
 
-/* Занятия и команда */
+/* Занятия */
 
 img {
   display: block;
@@ -291,6 +288,11 @@ img {
   border: 0 solid #eeeeee;
 }
 
+.comands {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .work-title,
 .command-title {
   margin-top: 0;
@@ -302,9 +304,7 @@ img {
 
 .command-name {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -314,13 +314,14 @@ img {
 .command-profession {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 30px;
+  color: var(--secondary-text-color);
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
+
+/* Фильтеры */
 
 .filters {
   display: flex;
@@ -330,10 +331,13 @@ img {
   align-items: center;
   margin-top: 185px;
   margin-bottom: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .filter-buttons {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filter-buttons .filter-btn + .filter-btn {
@@ -344,7 +348,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-left: -15px;
-  margin-top: 19px;
 }
 
 .filter-list {
@@ -386,7 +389,7 @@ img {
 
 /* Футер */
 
-.footers {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -405,6 +408,10 @@ img {
   line-height: 1.71;
   color: #ffffff;
   margin-top: 20px;
+}
+
+.address-list {
+  margin-bottom: 9px;
 }
 
 .address-contact {
